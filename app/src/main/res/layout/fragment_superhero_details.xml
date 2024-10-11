@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Imagen del Superhéroe -->
+        <ImageView
+            android:id="@+id/superheroImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagen del superhéroe"
+            android:layout_gravity="center" />
+
+        <!-- Nombre del Superhéroe -->
+        <TextView
+            android:id="@+id/superheroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Superhéroe"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:textColor="#000000"/>
+
+        <!-- Slug -->
+        <TextView
+            android:id="@+id/superheroSlug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alias"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="#777777" />
+
+        <!-- Sección: Powerstats -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powerstats"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/superheroStrength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strength: 0"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/superheroSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed: 0"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/superheroDurability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Durability: 0"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/superheroPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power: 0"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/superheroCombat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Combat: 0"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Sección: Apariencia -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apariencia"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/superheroAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Altura: , Peso: , Color de ojos: , Color de cabello:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Sección: Biografía -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biografía"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/superheroBiography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lugar de nacimiento: \nPrimera aparición: \nEditorial: "
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Sección: Trabajo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trabajo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/superheroWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ocupación: \nBase de operaciones:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Sección: Conexiones -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conexiones"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/superheroConnections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupos afiliados: \nRelaciones:"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

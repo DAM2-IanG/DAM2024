@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/superhero_fragment"> <!--Aqui id del fragmento que queremos que sea el primero-->
+
+    <fragment
+        android:id="@+id/superhero_fragment"
+        android:name="educ.Iesam.dam2024.features.superhero.presentation.SuperheroFragment"
+        tools:layout="@layout/fragment_superhero" >
+
+        <action android:id="@+id/action_from_superhero_fragment_to_superhero_detail_fragment"
+            app:destination="@id/superhero_detail_fragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/superhero_detail_fragment"
+        android:name="educ.Iesam.dam2024.features.superhero.presentation.SuperheroDetailFragment"
+        tools:layout="@layout/fragment_superhero_details">
+
+        <!--AQUI PONEMOS EL ARGUMENTO QUE VAMOS A RECIBIR DEL SUPERHEROE-->
+        <argument
+            android:name="superheroID"
+            app:argType="string"
+            app:nullable="false" />
+        <!--Esto es para que no sea nulo-->
+    </fragment>
+</navigation>
